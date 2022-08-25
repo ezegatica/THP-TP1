@@ -13,27 +13,33 @@ public class Ejercicio_20 {
 
 	public static void main(String[] args) {
 		int num1 = 0, num2 = 0;
-		String operacion = "";
+		final char SUMA = '+';
+		final char RESTA = '-';
+		final char MULTIPLICACION = '*';
+		final char DIVISION = '/';
+		final String MENSAJE_ERROR = "ERROR";
+		char operacion = ';';
+
 		System.out.println("Ingrese un numero entero: ");
 		num1 = input.nextInt();
 		System.out.println("Ingrese otro numero entero: ");
 		num2 = input.nextInt();
 		System.out.println("Selecciona la operacion a realizar ('+','-', '*', '/'): ");
-		operacion = input.next();
+		operacion = input.next().charAt(0);
 
 		switch(operacion) {
-		case "+":
+		case SUMA:
 			System.out.println("La suma da: " + (num1 + num2));
 			break;
-		case "-":
+		case RESTA:
 			System.out.println("La resta da: " + (num1 - num2));
 			break;
-		case "*":
+		case MULTIPLICACION:
 			System.out.println("La multiplicacion da: " + (num1 * num2));
 			break;
-		case "/":
+		case DIVISION:
 			if (num2 == 0) {
-				System.out.println("ERROR");
+				System.out.println(MENSAJE_ERROR);
 			} else {			
 				System.out.println("La divison da: " + (num1 / num2));
 			}

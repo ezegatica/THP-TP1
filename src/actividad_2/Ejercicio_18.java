@@ -27,11 +27,14 @@ public class Ejercicio_18 {
 			mayor = num2;
 			menor = num1;
 		}
-		
-		if (mayor % menor == 0) {
-			System.out.println(mayor + " es divisible por " + menor);
-		} else {
-			System.out.println(mayor + " no es divisible por " + menor);
+		if (menor == 0) {
+			System.out.println("No se puede dividir por 0!");
+		} else {			
+			if (mayor % menor == 0) {
+				System.out.println(mayor + " es divisible por " + menor);
+			} else {
+				System.out.println(mayor + " no es divisible por " + menor);
+			}
 		}
 	}
 
