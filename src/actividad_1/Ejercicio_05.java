@@ -10,11 +10,11 @@ Una vez cargadas, mostrar ambas variables por pantalla
 lo cargado en num1 quede en num2, y viceversa) y volvé a mostrarlas actualizadas. [EC]
  */
 
-public class Ejercicio_5 {
+public class Ejercicio_05 {
 	private static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		int num1, num2, tmp;
+		int num1 = 0, num2 = 0, tmp = 0;
 		System.out.println("Ingresar numero 1: ");
 		num1 = input.nextInt();
 		System.out.println("Ingresar numero 2: ");

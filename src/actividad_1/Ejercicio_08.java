@@ -6,7 +6,7 @@ import java.util.Scanner;
  *  Debes mostrar los                      
 resultados para las 4 operaciones matemáticas básicas con los números ingresados. [EC]
  */
-public class Ejercicio_8 {
+public class Ejercicio_08 {
 	private static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {

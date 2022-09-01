@@ -6,11 +6,12 @@ public class Ejercicio_22 {
  * 1 al 5, y luego los mismos números pero en orden inverso. [EC]
  */
 	public static void main(String[] args) {
-		for(int i = 1; i <= 5; i++) {
+		final int PRIMER_NUMERO = 1, SEGUNDO_NUMERO = 5;
+		for(int i = PRIMER_NUMERO; i <= SEGUNDO_NUMERO; i++) {
 			System.out.println(i);
 		}
-		
-		for(int i = 5; i >= 1; i--) {
+		System.out.println("----------"); // Divisor
+		for(int i = SEGUNDO_NUMERO; i >= PRIMER_NUMERO; i--) {
 			System.out.println(i);
 		}
 	}

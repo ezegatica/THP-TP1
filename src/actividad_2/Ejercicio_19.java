@@ -28,23 +28,18 @@ public class Ejercicio_19 {
 		int num = 0;
 		System.out.println("Ingresar un numero entero: ");
 		num = input.nextInt();
-		
-		boolean esDeUnSoloDigito = num >= 0 && num < 10;
+
+		boolean esDeUnSoloDigito = num >=-9 && num <= 9;
 		boolean esImpar = (num % 2) == 1;
-		boolean estaEnAmbos = (esDeUnSoloDigito && esImpar);
-		boolean noEstaEnNinguno = !(esDeUnSoloDigito || esImpar);
-		
-		if (esDeUnSoloDigito) {
-			System.out.println("El numero tiene un solo dígito!");
-		}
-		if (esImpar) {
-			System.out.println("El numero es impar!");
-		}
-		if (estaEnAmbos) {
-			System.out.println("El numero esta en ambos!");
-		} else if (noEstaEnNinguno) { 
-			// Como un número no puede estar en ambos Y en ninguno, por lo que se agrega al else
-			System.out.println("El numero no esta en ninguno");
-		}
+		boolean estaEnAmbos = esDeUnSoloDigito && esImpar;
+		boolean noEstaEnNinguno = !esDeUnSoloDigito && !esImpar;
+
+		System.out.println("esDeUnSoloDigito? " + esDeUnSoloDigito);
+
+		System.out.println("esImpar? " + esImpar);
+
+		System.out.println("estaEnAmbos? " + estaEnAmbos);
+
+		System.out.println("noEstaEnNinguno? " + noEstaEnNinguno);
 	}
 }

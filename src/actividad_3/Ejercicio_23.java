@@ -9,10 +9,12 @@ public class Ejercicio_23 {
  */
 	public static void main(String[] args) {
 		int n = 0;
+		final int CANTIDAD_MULTIPLOS = 10;
+
 		System.out.println("Ingrese el numero n: ");
 		n = Integer.parseInt(input.nextLine());
 		
-		for(int i = 1; i <= 10; i++) {
+		for(int i = 1; i <= CANTIDAD_MULTIPLOS; i++) {
 			System.out.println(n + " x " + i + " = " + n*i);
 		}
 	}

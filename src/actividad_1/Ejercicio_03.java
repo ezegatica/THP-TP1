@@ -8,7 +8,7 @@ ingresado:
 a. Multiplicado por 5.
 b. Dividido por 2.
  */
-public class Ejercicio_3 {
+public class Ejercicio_03 {
 	private static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {

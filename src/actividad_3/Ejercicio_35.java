@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ejercicio_35 {
 	private static Scanner input = new Scanner(System.in);
 	/*
-5.Realizá un programa que permita ingresar nombre y edad de un grupo de personas (para
+Realizá un programa que permita ingresar nombre y edad de un grupo de personas (para
 cada una, nombre y edad). La carga termina cuando en el nombre de la persona se ingresa un
 asterisco ('*'). Mostrar al final cómo se llama la persona más joven
 	 */
@@ -13,9 +13,10 @@ asterisco ('*'). Mostrar al final cómo se llama la persona más joven
 		String nombre = "";
 		int edad = 0;
 		String personaMasJoven = "";
+		int edadMinima = Integer.MAX_VALUE;
+
 		final String CARACTER_SALIDA = "*";
 
-		int edadMinima = Integer.MAX_VALUE;
 
 		do {
 			System.out.println("Ingrese un nombre: ");

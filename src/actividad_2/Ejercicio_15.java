@@ -23,13 +23,15 @@ public class Ejercicio_15 {
 		String nombre = "";
 		int edad = 0;
 		double altura = 0.0;
+		final int EDAD_MINIMA = 6;
+		final double ALTURA_MINIMA = 1.50;
 		System.out.println("Ingresar el nombre: ");
 		nombre = input.nextLine();
 		System.out.println("Ingresar la edad: ");
 		edad = input.nextInt();
 		System.out.println("Ingresar la altura: ");
 		altura = input.nextDouble();
-		if (edad >= 6 || altura > 1.50) {
+		if (edad >= EDAD_MINIMA || altura > ALTURA_MINIMA) {
 			System.out.println(nombre + " pasa.");
 		} else {
 			System.out.println(nombre + " no pasa.");

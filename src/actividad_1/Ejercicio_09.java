@@ -10,11 +10,11 @@ grados de dos ángulos interiores de cierto triángulo.
 ángulos el programa debe mostrar el valor en grados del ángulo restante. Recordá que la                            
 suma de los ángulos interiores de todo triángulo es de 180º.
  */
-public class Ejercicio_9 {
+public class Ejercicio_09 {
 	private static Scanner input = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		int num1, num2, angulo3;
+		int num1 = 0, num2 = 0, angulo3 = 0;
 		final int SUMA_ANGULOS_INTERIORES = 180;
 		System.out.println("Ingrese el valor del primer ángulo: ");
 		num1 = input.nextInt();
